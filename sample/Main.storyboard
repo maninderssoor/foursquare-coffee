@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xu4-I5-FBV">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="uPu-jy-RJ7">
+            <objects>
+                <navigationController id="xu4-I5-FBV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z0W-wu-dEW">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.42352941176470588" green="0.12941176470588234" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="x5j-BE-1jL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btI-F5-AjE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="98"/>
+        </scene>
+        <!--Venues-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="VenueListViewController" customModule="sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bPQ-vh-q2b">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CIu-R3-ib7">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFq-Wz-l8C">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="89l-hw-EoH">
+                                        <rect key="frame" x="87" y="278.5" width="240" height="238.5"/>
+                                        <color key="tintColor" red="0.42352941179999998" green="0.12941176469999999" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="EeD-4V-pzT"/>
+                                            <constraint firstAttribute="width" constant="240" id="cx3-go-bb5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To search for coffee shops near you, tap on the location button above or in the top right" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfL-sX-0qp">
+                                        <rect key="frame" x="87" y="534" width="240" height="50.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="vfL-sX-0qp" firstAttribute="leading" secondItem="89l-hw-EoH" secondAttribute="leading" id="41i-IC-mxE"/>
+                                    <constraint firstItem="vfL-sX-0qp" firstAttribute="trailing" secondItem="89l-hw-EoH" secondAttribute="trailing" id="OYS-Eg-ahm"/>
+                                    <constraint firstItem="vfL-sX-0qp" firstAttribute="top" secondItem="89l-hw-EoH" secondAttribute="bottom" constant="16" id="T79-QE-afl"/>
+                                    <constraint firstItem="89l-hw-EoH" firstAttribute="centerY" secondItem="ZFq-Wz-l8C" secondAttribute="centerY" constant="-50" id="buR-Gq-BEG"/>
+                                    <constraint firstItem="89l-hw-EoH" firstAttribute="centerX" secondItem="ZFq-Wz-l8C" secondAttribute="centerX" id="lRV-pS-NKu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bPQ-vh-q2b" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="1ag-dP-zh2"/>
+                            <constraint firstItem="ZFq-Wz-l8C" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="5ED-Vc-25q"/>
+                            <constraint firstItem="ZFq-Wz-l8C" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Q26-wI-hLY"/>
+                            <constraint firstAttribute="bottom" secondItem="ZFq-Wz-l8C" secondAttribute="bottom" id="Xf0-y4-xuN"/>
+                            <constraint firstItem="bPQ-vh-q2b" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="jiV-Zs-jHP"/>
+                            <constraint firstAttribute="bottom" secondItem="bPQ-vh-q2b" secondAttribute="bottom" id="k3H-zR-9Iy"/>
+                            <constraint firstItem="ZFq-Wz-l8C" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="mUW-4W-KoN"/>
+                            <constraint firstItem="bPQ-vh-q2b" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="mkC-tS-5OW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Venues" id="aXL-Ee-8LL">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="location.viewfinder" catalog="system" style="plain" id="1wN-T3-nKK">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="loadData" destination="Y6W-OH-hqX" id="2aj-gQ-Cmv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="bPQ-vh-q2b" id="8ch-xT-mXJ"/>
+                        <outlet property="startSearchView" destination="ZFq-Wz-l8C" id="FAo-UP-fhI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728.98550724637687" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location.viewfinder" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

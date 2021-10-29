@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aPs-4u-4qJ" customClass="VenueCell" customModule="sample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yQi-7Y-nbA">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="132"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzN-tW-5d4">
+                        <rect key="frame" x="16" y="33" width="24.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                        <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xps-3H-rh7">
+                        <rect key="frame" x="16" y="58.5" width="331" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="H3z-dX-pgx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNC-qg-XB4">
+                        <rect key="frame" x="16" y="103" width="331" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" systemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBJ-tD-f29">
+                        <rect key="frame" x="16" y="12" width="30" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="U97-aq-cWa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pNC-qg-XB4" secondAttribute="trailing" constant="12" id="0aY-2N-diu"/>
+                    <constraint firstItem="pNC-qg-XB4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Xps-3H-rh7" secondAttribute="bottom" constant="8" id="ApP-5J-QJl"/>
+                    <constraint firstAttribute="bottom" secondItem="pNC-qg-XB4" secondAttribute="bottom" constant="12" id="K88-dK-ikD"/>
+                    <constraint firstItem="Xps-3H-rh7" firstAttribute="top" secondItem="dzN-tW-5d4" secondAttribute="bottom" constant="12" id="MUa-nJ-Rut"/>
+                    <constraint firstItem="pNC-qg-XB4" firstAttribute="trailing" secondItem="Xps-3H-rh7" secondAttribute="trailing" id="PRh-c7-mWf"/>
+                    <constraint firstItem="bBJ-tD-f29" firstAttribute="leading" secondItem="yQi-7Y-nbA" secondAttribute="leading" constant="16" id="T5s-jR-iKE"/>
+                    <constraint firstItem="Xps-3H-rh7" firstAttribute="leading" secondItem="dzN-tW-5d4" secondAttribute="leading" id="eKZ-6a-jhG"/>
+                    <constraint firstItem="dzN-tW-5d4" firstAttribute="top" secondItem="bBJ-tD-f29" secondAttribute="bottom" constant="4" id="elb-sm-l1U"/>
+                    <constraint firstItem="dzN-tW-5d4" firstAttribute="top" secondItem="bBJ-tD-f29" secondAttribute="bottom" constant="4" id="gHK-sj-FJJ"/>
+                    <constraint firstItem="pNC-qg-XB4" firstAttribute="leading" secondItem="bBJ-tD-f29" secondAttribute="leading" id="im6-ic-hAe"/>
+                    <constraint firstItem="dzN-tW-5d4" firstAttribute="leading" secondItem="bBJ-tD-f29" secondAttribute="leading" id="jVH-IT-0AG"/>
+                    <constraint firstItem="dzN-tW-5d4" firstAttribute="leading" secondItem="bBJ-tD-f29" secondAttribute="leading" id="l4e-LS-WLP"/>
+                    <constraint firstItem="bBJ-tD-f29" firstAttribute="top" secondItem="yQi-7Y-nbA" secondAttribute="top" constant="12" id="nPd-je-Umi"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="509" height="204"/>
+            <connections>
+                <outlet property="labelDescription" destination="Xps-3H-rh7" id="MTK-Zy-yWu"/>
+                <outlet property="labelDistance" destination="pNC-qg-XB4" id="5L7-nA-ygJ"/>
+                <outlet property="labelSubheading" destination="dzN-tW-5d4" id="y7O-ln-LR7"/>
+                <outlet property="labelTitle" destination="bBJ-tD-f29" id="f7P-Xg-uGq"/>
+            </connections>
+            <point key="canvasLocation" x="7.9710144927536239" y="34.821428571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
