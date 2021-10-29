@@ -110,6 +110,7 @@ extension VenueListViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Failed to get the users location with error \(String(describing: error))")
+        locationManager.stopUpdatingLocation()
     }
 }
 
