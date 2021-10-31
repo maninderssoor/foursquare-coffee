@@ -12,6 +12,7 @@ class VenueListViewController: UIViewController {
         return UICollectionViewDiffableDataSource<VenueSection, VenueItem>(collectionView: collectionView) { collectionView, IndexPath, item in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: VenueCell.identifier, for: IndexPath) as? VenueCell else { return nil }
             
+            cell.accessibilityIdentifier = item.venue.id
             cell.labelTitle?.text = item.venue.name
             cell.labelSubheading?.text = item.venue.formattedCategories
             cell.labelDescription?.text = item.venue.location.formattedAddress
@@ -68,6 +69,7 @@ extension VenueListViewController {
     private func setupCollectionView() {
         collectionView?.register(UINib(nibName: VenueCell.xib, bundle: nil), forCellWithReuseIdentifier: VenueCell.identifier)
         collectionView?.collectionViewLayout = flowLayout
+        collectionView?.accessibilityIdentifier = "collectionView"
     }
     
     private func setPlaceholderVisiblity(isVisible visible: Bool) {

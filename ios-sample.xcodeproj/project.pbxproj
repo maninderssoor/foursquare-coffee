@@ -20,6 +20,7 @@
 		00868ABA2715D558006B873B /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00868AAA2715D558006B873B /* VenueCell.swift */; };
 		00868ABB2715D558006B873B /* VenueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00868AAB2715D558006B873B /* VenueCell.xib */; };
 		00868ABE2715D558006B873B /* VenueResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00868AAF2715D558006B873B /* VenueResults.swift */; };
+		00898D41272EFE3B002E4391 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00898D40272EFE3B002E4391 /* UITests.swift */; };
 		00EB15B6272C2F3000E84237 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EB15B5272C2F3000E84237 /* MapKit.framework */; };
 		00EB1D2C272C8CB600E84237 /* ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EB1D2B272C8CB600E84237 /* ErrorAlert.swift */; };
 		00EB1D2E272C94E000E84237 /* VenueAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EB1D2D272C94DF00E84237 /* VenueAPIService.swift */; };
@@ -32,6 +33,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		001200E5272C0127003C26D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00BDEF2D271447E700713F08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00868A862715D4E6006B873B;
+			remoteInfo = sample;
+		};
+		00898D43272EFE3B002E4391 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00BDEF2D271447E700713F08 /* Project object */;
 			proxyType = 1;
@@ -60,6 +68,9 @@
 		00868AAA2715D558006B873B /* VenueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
 		00868AAB2715D558006B873B /* VenueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VenueCell.xib; sourceTree = "<group>"; };
 		00868AAF2715D558006B873B /* VenueResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueResults.swift; sourceTree = "<group>"; };
+		00898D3E272EFE3B002E4391 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00898D40272EFE3B002E4391 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		00898D42272EFE3B002E4391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00EB15B5272C2F3000E84237 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		00EB1D2B272C8CB600E84237 /* ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlert.swift; sourceTree = "<group>"; };
 		00EB1D2D272C94DF00E84237 /* VenueAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueAPIService.swift; sourceTree = "<group>"; };
@@ -83,6 +94,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				00EB15B6272C2F3000E84237 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00898D3B272EFE3B002E4391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,11 +193,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		00898D3F272EFE3B002E4391 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				00898D40272EFE3B002E4391 /* UITests.swift */,
+				00898D42272EFE3B002E4391 /* Info.plist */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
 		00BDEF2C271447E700713F08 = {
 			isa = PBXGroup;
 			children = (
 				00868A882715D4E6006B873B /* sample */,
 				001200E1272C0127003C26D4 /* Tests */,
+				00898D3F272EFE3B002E4391 /* UITests */,
 				00BDEF3A271447E800713F08 /* Products */,
 				00EB15B4272C2F3000E84237 /* Frameworks */,
 			);
@@ -190,6 +218,7 @@
 			children = (
 				00868A872715D4E6006B873B /* "Coffee (Debug)".app */,
 				001200E0272C0127003C26D4 /* Tests.xctest */,
+				00898D3E272EFE3B002E4391 /* UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,6 +277,24 @@
 			productReference = 00868A872715D4E6006B873B /* "Coffee (Debug)".app */;
 			productType = "com.apple.product-type.application";
 		};
+		00898D3D272EFE3B002E4391 /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00898D47272EFE3B002E4391 /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				00898D3A272EFE3B002E4391 /* Sources */,
+				00898D3B272EFE3B002E4391 /* Frameworks */,
+				00898D3C272EFE3B002E4391 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00898D44272EFE3B002E4391 /* PBXTargetDependency */,
+			);
+			name = UITests;
+			productName = UITests;
+			productReference = 00898D3E272EFE3B002E4391 /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -264,6 +311,10 @@
 					00868A862715D4E6006B873B = {
 						CreatedOnToolsVersion = 12.5.1;
 						LastSwiftMigration = 1250;
+					};
+					00898D3D272EFE3B002E4391 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 00868A862715D4E6006B873B;
 					};
 				};
 			};
@@ -282,6 +333,7 @@
 			targets = (
 				00868A862715D4E6006B873B /* sample */,
 				001200DF272C0127003C26D4 /* Tests */,
+				00898D3D272EFE3B002E4391 /* UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -303,6 +355,13 @@
 				00868ABB2715D558006B873B /* VenueCell.xib in Resources */,
 				00868AB82715D558006B873B /* Main.storyboard in Resources */,
 				00868AB22715D558006B873B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00898D3C272EFE3B002E4391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +397,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00898D3A272EFE3B002E4391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00898D41272EFE3B002E4391 /* UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -345,6 +412,11 @@
 			isa = PBXTargetDependency;
 			target = 00868A862715D4E6006B873B /* sample */;
 			targetProxy = 001200E5272C0127003C26D4 /* PBXContainerItemProxy */;
+		};
+		00898D44272EFE3B002E4391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00868A862715D4E6006B873B /* sample */;
+			targetProxy = 00898D43272EFE3B002E4391 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -367,7 +439,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sample.app/sample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/\"Coffee (Debug)\".app/\"Coffee (Debug)\"";
 			};
 			name = Debug;
 		};
@@ -389,7 +461,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sample.app/sample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/\"Coffee (Debug)\".app/\"Coffee (Debug)\"";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -410,6 +482,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.manindersoor.iossample.sample;
+				PRODUCT_MODULE_NAME = sample;
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -434,10 +507,54 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.manindersoor.iossample.sample;
+				PRODUCT_MODULE_NAME = sample;
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00898D45272EFE3B002E4391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9D99M3BW5U;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.manindersoor.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sample;
+			};
+			name = Debug;
+		};
+		00898D46272EFE3B002E4391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9D99M3BW5U;
+				INFOPLIST_FILE = UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.manindersoor.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sample;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -570,6 +687,15 @@
 			buildConfigurations = (
 				00868A992715D4E7006B873B /* Debug */,
 				00868A9A2715D4E7006B873B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00898D47272EFE3B002E4391 /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00898D45272EFE3B002E4391 /* Debug */,
+				00898D46272EFE3B002E4391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -89,7 +89,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Venues" id="aXL-Ee-8LL">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="location.viewfinder" catalog="system" style="plain" id="1wN-T3-nKK">
+                        <barButtonItem key="rightBarButtonItem" title="search" image="location.viewfinder" catalog="system" style="plain" id="1wN-T3-nKK">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="loadData" destination="Y6W-OH-hqX" id="2aj-gQ-Cmv"/>
